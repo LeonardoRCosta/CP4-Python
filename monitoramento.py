@@ -74,7 +74,7 @@ def media_temp(temperaturas):
     media = soma(temperaturas) / (len(temperaturas) * len(temperaturas[0]))
     return media
 
-def imprimir_resultador(temperaturas, menor_maior, negativas, media):
+def imprimir_resultados(temperaturas, menor_maior, negativas, media):
     '''
     Função que imprime os resultados obtidos
     parâmetro: temperaturas -> Matriz contendo temperaturas
@@ -99,6 +99,6 @@ def principal():
     menor_maior = pega_menor_maior(temperaturas)
     negativas = separa_negativas(temperaturas)
     media = media_temp(temperaturas)
-    imprimir_resultador(temperaturas, menor_maior, negativas, media)
+    imprimir_resultados(temperaturas, menor_maior, negativas, media)
 
 principal()
